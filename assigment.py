@@ -24,6 +24,7 @@ def getProductDetails(allProducts, rating="4.0"):
         for key,value in allProducts[product].items():
             if key == 'rating' and value == rating:
                result.update({product: allProducts[product]})
+               print("The product {} has rating {}".format(product,rating))
     return result
 
 
