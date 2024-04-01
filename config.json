@@ -1,0 +1,14 @@
+{
+  "username": "789962046",
+  "password": "",
+  "searchEngineURL": "http://www.google.com",
+  "productName": "dell",
+  "productFilter": {
+    "productCategory": "Electronics",
+    "minPrice": "30000",
+    "maxPrice": "50000",
+    "ratings": "5.0"
+  },
+  "noPagesToSearch": 2,
+  "productCount": 1
+}
