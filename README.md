@@ -15,10 +15,12 @@ The goal of this script is to automate the following tasks:
 
 
 Tried the below steps but could not perform it since to add it wish list the user should be logged in and to login we will encounter to read from captcha so could not find the right approch.  
+
 12. add the first product whose rating is 5 out of 5 to the wish list. (Create a new wish list)
 13. Validate the product is added to the wish list
 
 Instead of the above steps I have tried to add the Items to cart and verify
+
 12. add the first product whose rating is 5 out of 5 to the cart. (Create a new wish list)
 13. Validate the product is added to the cart
 
