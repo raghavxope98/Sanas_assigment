@@ -70,9 +70,18 @@ def addingToWishlist(products):
 def verifyCart(products):
     driver.get("https://www.amazon.in/gp/cart/view.html")
     WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, ".sc-list-item-content")))
-    # product_titles = driver.find_elements(By.CSS_SELECTOR, ".sc-list-item-content .aok-offscreen")
-    # for title in product_titles:
-    #     print(title.text)
+    item_titles = driver.find_elements(By.CSS_SELECTOR, '.sc-product-title')
+    for title in item_titles:
+        print(type(title.text))
+        print(title.text)
+        if '…' in title.text:
+            element = title.text.split('…')[0]
+        else:
+            element = title.text
+        if products.find(element):
+            print("added to cart")
+
+
 
 
 def readInputValues(filename):
