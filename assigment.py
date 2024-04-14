@@ -227,8 +227,15 @@ for product in productName:
 #step 11.	print all the products on the first 2 pages whose rating is 5 out of 5
 cartItems = getProductDetails(product_details, rating=ratings)
 print("===================================================================")
-print("The product list {} has rating {}".format(list(cartItems.keys()),ratings))
-print("===================================================================")
+print("Below product have rating {}".format(ratings))
+productName = cartItems.keys()
+for product in productName:
+    print("===================================================================")
+    print("Product Name : ",product)
+    print("Price : ",product_details[product]['price'])
+    print("Rating : ", product_details[product]['rating'])
+    print("Product Link : ", product_details[product]['product_link'])
+    print("===================================================================")
 
 # step 12 and 13.	add the first product whose rating is 5 out of 5 to the wish list. (Create a new wish list) and Validate the product is added to the wish list
 if cartItems is not None:
