@@ -213,6 +213,8 @@ for page in range(noPagesToSearch):
             break
         wait_for_element_present((By.LINK_TEXT, "Next"))
         product_elements = driver.find_elements(By.CSS_SELECTOR, "[data-component-type='s-search-result']")
+print("======================================================================")
+print("Displaying all the products in page 1 and page 2 after filter is set ")
 productName = product_details.keys()
 for product in productName:
     print("===================================================================")
