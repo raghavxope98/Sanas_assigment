@@ -241,5 +241,7 @@ for product in productName:
 if cartItems is not None:
     #addingToCart(driver,cartItems,productCount)
     addingToWishlist(driver, cartItems, productCount, wishListName)
+else:
+    print("There are no product with rating {}".format(ratings))
 
 driver.quit()
